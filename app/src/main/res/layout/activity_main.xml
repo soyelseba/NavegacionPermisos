@@ -7,23 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="24dp"
+        android:padding="16dp"
         android:gravity="center">
 
-        <!-- Campo de entrada según lámina 2 del PDF (inputTexto) -->
         <EditText
-            android:id="@+id/inputTexto"
+            android:id="@+id/etTexto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Escribe un texto para enviar"
-            android:inputType="text"
+            android:hint="Escribe un título o ID"
             android:layout_marginBottom="16dp"/>
 
-        <!-- Botón para navegar a DetalleActivity -->
         <Button
             android:id="@+id/btnEnviar"
             android:layout_width="match_parent"
@@ -31,27 +28,11 @@
             android:text="Enviar a Detalle"
             android:layout_marginBottom="16dp"/>
 
-        <!-- Botón para solicitar permisos según lámina 2 del PDF (btnSolicitarPermiso) -->
         <Button
-            android:id="@+id/btnSolicitarPermiso"
+            android:id="@+id/btnPermiso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Solicitar Permiso Ubicación"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Botones agregados según lámina 3 del PDF (btnListarBluetooth y btnNombreWifi) -->
-        <Button
-            android:id="@+id/btnListarBluetooth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ver Dispositivos Bluetooth"
-            android:layout_marginBottom="16dp"/>
-
-        <Button
-            android:id="@+id/btnNombreWifi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ver Nombre Wi-Fi"/>
+            android:text="Solicitar Permiso"/>
 
     </LinearLayout>
 
